@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('Gambar/FA.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover; /* Membuat gambar latar belakang menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar latar belakang */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    color: #333; /* Warna teks default */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    max-width: 800px; /* Maksimal lebar untuk konten */
+}
+
+.profile-photo {
+    width: 100%; /* Mengatur lebar gambar 100% dari kontainer */
+    max-width: 300px; /* Maksimal lebar gambar */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    display: block; /* Menghilangkan spasi di bawah gambar */
+    margin: 20px auto; /* Memusatkan gambar */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsif */
+    gap: 20px; /* Jarak antar item */
+}
+
+.project-item {
+    background: #f9f9f9; /* Latar belakang item proyek */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 10px; /* Ruang dalam item */
+    text-align: center; /* Memusatkan teks */
+}
+
+.project-image {
+    width: 100%; /* Mengatur lebar gambar 100% dari kontainer */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    border-radius: 5px; /* Membuat sudut gambar melengkung */
+    margin-top: 10px; /* Memberikan jarak antara judul dan gambar */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    }
+}
